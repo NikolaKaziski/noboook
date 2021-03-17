@@ -13,6 +13,7 @@ function App() {
       <div className="app__body">
         <Sidebar />
         <Feed />
+        <Widgets />
 
         
 
