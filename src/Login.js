@@ -6,13 +6,16 @@ import { actionTypes } from "./reducer";
 import { useStateValue } from './StateProvider';
 
 function Login() {
-    const [state,dispatch] = useStateValue();
+    const [state, dispatch] = useStateValue();
 
     const singIn = () => {
         auth
             .signInWithPopup(provider)
             .then((result) => {
-                console.log(result.user);
+                dispatch({
+                    type: actionTypes.SET_USER,
+                    user: result.user,
+                });
             })
             .catch((error) => alert(error.message));
     };
