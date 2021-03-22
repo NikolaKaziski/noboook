@@ -15,8 +15,8 @@ function Sidebar() {
 
     return (
         <div className="sidebar">
-            <SidebarRow 
-            src={user.photoUrl} title={user.displayName}/>
+            <SidebarRow
+                src={user.photoURL} title={user.displayName} />
             <SidebarRow Icon={LocalHospitalIcon} title='Covid 19 Information Center' />
             <SidebarRow Icon={EmojiFlagsIcon} title='Pages' />
             <SidebarRow Icon={PeopleIcon} title='Friends' />
