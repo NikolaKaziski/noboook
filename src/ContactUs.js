@@ -1,6 +1,8 @@
 import React from 'react';
+import './ContactUs.css'
 import { Form, Input, Button, Checkbox } from 'antd';
 const { TextArea } = Input;
+
 
 function ContactUs() {
     return (
