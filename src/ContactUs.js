@@ -6,7 +6,7 @@ const { TextArea } = Input;
 
 function ContactUs() {
     return (
-        <div className="block contactBlock">
+        <div id="contact" className="block contactBlock">
             <div className="container-fluid">
                 <div className="titleHolder">
                     <h2>Contact Us</h2>
