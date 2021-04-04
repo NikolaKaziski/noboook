@@ -5,9 +5,9 @@ import Sidebar from './Sidebar';
 import Feed from './Feed';
 import Widgets from './Widgets';
 import Login from './Login';
-import ContactUs from './ContactUs';
 import { useStateValue } from './StateProvider';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import NewContact from './NewContact'
 
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
                   <Widgets />
                 </div>
               </Route>
-              <Route path="/contact" component={ContactUs} />
+              <Route path="/contact" component={NewContact} />
             </Switch>
           </>
         )}
