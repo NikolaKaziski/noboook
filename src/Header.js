@@ -44,9 +44,9 @@ function Header() {
                     <ContactMailOutlinedIcon frontSize="large" />
                 </Link>
 
-                <div className="header__option">
+                <Link to="./video" className="header__option">
                     <SubscriptionsIcon frontSize="large" />
-                </div>
+                </Link>
 
                 <div className="header__option">
                     <StoreIcon frontSize="large" />

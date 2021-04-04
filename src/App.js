@@ -7,7 +7,9 @@ import Widgets from './Widgets';
 import Login from './Login';
 import { useStateValue } from './StateProvider';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import NewContact from './NewContact'
+import NewContact from './NewContact';
+import MedicalCenter from './MedicalCenter';
+import Video from './Video';
 
 
 function App() {
@@ -32,6 +34,8 @@ function App() {
                 </div>
               </Route>
               <Route path="/contact" component={NewContact} />
+              <Route path="/medical" component={MedicalCenter} />
+              <Route path="/video" component={Video} />
             </Switch>
           </>
         )}
