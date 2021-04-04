@@ -42,7 +42,6 @@ const NewContact = () => {
             <input
                 placeholder="Full Name"
                 value={name}
-                rules={[{ required: true, message: 'Please input your full name!' }]}
                 onChange={(e) => setName(e.target.value)}
             />
 
@@ -57,7 +56,6 @@ const NewContact = () => {
             <textarea
                 placeholder="Message"
                 value={message}
-                rules={[{ required: true, message: 'Please input your email!' }]}
                 onChange={(e) => setMessage(e.target.value)}
             ></textarea>
 
