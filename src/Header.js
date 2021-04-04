@@ -13,7 +13,9 @@ import AddIcon from '@material-ui/icons/Add';
 import ForumIcon from '@material-ui/icons/Forum';
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import ContactMailOutlinedIcon from '@material-ui/icons/ContactMailOutlined';
 import { useStateValue } from './StateProvider';
+import {Link} from 'react-router-dom'
 
 function Header() {
 
@@ -33,14 +35,14 @@ function Header() {
             </div>
 
             <div className="header__center">
-                <div className="header__option
+                <Link to="/" className="header__option
                 header__option--active">
                     <HomeIcon frontSize="large" />
-                </div>
+                </Link>
 
-                <div className="header__option">
-                    <FlagIcon frontSize="large" />
-                </div>
+                <Link to="./contact" className="header__option">
+                    <ContactMailOutlinedIcon frontSize="large" />
+                </Link>
 
                 <div className="header__option">
                     <SubscriptionsIcon frontSize="large" />
