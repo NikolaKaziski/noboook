@@ -10,6 +10,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import NewContact from './NewContact';
 import MedicalCenter from './MedicalCenter';
 import Video from './Video';
+import Shop  from './Shop';
+import ItemDetails from './ItemDetails'
 
 
 function App() {
@@ -36,6 +38,8 @@ function App() {
               <Route path="/contact" component={NewContact} />
               <Route path="/medical" component={MedicalCenter} />
               <Route path="/video" component={Video} />
+              <Route path="/shop" exact component={Shop} />
+              <Route path="/shop/:id" component={ItemDetails}/>
             </Switch>
           </>
         )}
