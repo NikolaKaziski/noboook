@@ -12,6 +12,7 @@ import { useStateValue } from './StateProvider';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import MedicalCenter from './MedicalCenter';
 import { Link } from 'react-router-dom';
+import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
 
 
 function Sidebar() {
@@ -28,7 +29,9 @@ function Sidebar() {
             <SidebarRow Icon={EmojiFlagsIcon} title='Pages' />
             <SidebarRow Icon={PeopleIcon} title='Friends' />
             <SidebarRow Icon={ChatIcon} title='Messenger' />
-            <SidebarRow Icon={StorefrontIcon} title='Marketplace' />
+            <Link to="/about" style={{ textDecoration: 'none', color: 'black' }}>
+                <SidebarRow Icon={InfoOutlinedIcon} title='About us' />
+            </Link>
             <Link to="/video" style={{ textDecoration: 'none', color: 'black' }}>
                 <SidebarRow Icon={VideoLibraryIcon} title='Videos' />
             </Link>
