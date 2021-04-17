@@ -5,7 +5,7 @@ function Widgets() {
     return (
         <div className="widgets">
             <iframe
-               src="https://www.youtube.com"
+               src="https://www.youtube.com/c/Freecodecamp/videos"
                width="340"
                height="100%"
                style={{ border:"none", overflow:"hidden"}}

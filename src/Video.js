@@ -3,7 +3,7 @@ import React from 'react';
 function Video() {
     return (
         <iframe
-            src="https://www.youtube.com"
+            src="https://www.youtube.com/c/Freecodecamp/videos"
             type="text/html"
             width="100%"
             height="1000px"
