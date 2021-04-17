@@ -13,6 +13,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import MedicalCenter from './MedicalCenter';
 import { Link } from 'react-router-dom';
 import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
+import ContactMailOutlinedIcon from '@material-ui/icons/ContactMailOutlined';
 
 
 function Sidebar() {
@@ -27,7 +28,9 @@ function Sidebar() {
                 <SidebarRow Icon={LocalHospitalIcon} title='Covid 19 Information Center' />
             </Link>
             <SidebarRow Icon={EmojiFlagsIcon} title='Pages' />
-            <SidebarRow Icon={PeopleIcon} title='Friends' />
+            <Link to="/contact" style={{ textDecoration: 'none', color: 'black' }}>
+                <SidebarRow Icon={ContactMailOutlinedIcon} title='Contact Us' />
+            </Link>
             <SidebarRow Icon={ChatIcon} title='Messenger' />
             <Link to="/about" style={{ textDecoration: 'none', color: 'black' }}>
                 <SidebarRow Icon={InfoOutlinedIcon} title='About us' />
